@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styleSheet.css">
+<title>Symulator Drwala</title>
+</head>
+<html>
+<body>
+<div id="wrap">
+	<div id="menuBoczne">
+		<div id="avatar"></div>
+		<div id="level"></div>
+		<div id="expBox">
+			<div id="exp"></div>
+		</div>
+		<div id="amountOfWood"></div>
+		<div id="amountOfWoodPerSec"></div>
+		<div id="amountOfGoldenLeaves"></div>
+		<div id="bonusStatistics">
+			<div id="bonusWood">
+				<img src='placeholderbonusy.png' onclick='addBonusWood()'>
+				<div id="bonusWoodLevel"></div>
+				<div id="popup" style="display: none"></div>
+			</div>
+			<div id="bonusExp">
+				<img src='placeholderbonusy.png' onclick='addBonusExp()'>
+				<div id="bonusExpLevel"></div>
+				<div id="popup2" style="display: none"></div>
+			</div>
+			<div id="bonusItems">
+				<img src='placeholderbonusy.png' onclick='addBonusItems()'>
+				<div id="bonusItemsLevel"></div>
+				<div id="popup3" style="display: none"></div>
+			</div>
+			<div id="bonusGoldenLeaves">
+				<img src='placeholderbonusy.png' onclick='addBonusGoldenLeaves()'>
+				<div id="bonusGoldenLeavesLevel"></div>
+				<div id="popup4" style="display: none"></div>
+			</div>
+		</div>
+		<div id="remainingPoints"></div>
+	</div>
+
+	<div id="menuBoczne2">
+
+	</div>
+
+	<div id="glownyPanel">
+		<img src='woodGathering.png' onclick='gatherWood()'><br>
+		<div id="peasants"></div><br>
+		<div id="lumbermen"></div><br>
+	</div>
+	<div id="consoleWrap">
+		<div id="consoleButtons">
+
+			<button onclick='clearConsole()'>Clear console</button><br>
+
+		</div>
+		<div id="console">
+
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+<script src="game2.js"></script>
